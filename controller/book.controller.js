@@ -40,7 +40,7 @@ const deleteBook = async (req,res)=>{
         const id = req.params.id
         const object = await book.findByIdAndDelete(id)
         res.status(200).json({message:"book deleted successfully",object})
-    }
+    } 
     catch(error){
         console.log(error)
         res.status(500).json("Error deleting book")
