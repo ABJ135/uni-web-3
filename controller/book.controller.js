@@ -49,5 +49,7 @@ const deleteBook = async (req,res)=>{
 
 module.exports = {
     addBook,
-    showBook
+    showBook,
+    updateBook,
+    deleteBook
 }
